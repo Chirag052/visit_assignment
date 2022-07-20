@@ -6,16 +6,18 @@
         <entry key="app/src/main/res/drawable/bg_white.xml" value="0.179" />
         <entry key="app/src/main/res/drawable/cross_circle.xml" value="0.179" />
         <entry key="app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.179" />
+        <entry key="app/src/main/res/drawable/ic_baseline_check_24.xml" value="0.179" />
         <entry key="app/src/main/res/drawable/ic_baseline_keyboard_arrow_right_24.xml" value="0.179" />
         <entry key="app/src/main/res/drawable/rounded_corner_12.xml" value="0.179" />
         <entry key="app/src/main/res/drawable/rounded_corner_12_white.xml" value="0.179" />
         <entry key="app/src/main/res/drawable/rounded_corner_14_workout.xml" value="0.179" />
+        <entry key="app/src/main/res/drawable/rounded_corner_4_workout.xml" value="0.179" />
         <entry key="app/src/main/res/drawable/rounded_corner_8_white.xml" value="0.179" />
         <entry key="app/src/main/res/font/.xml" value="0.32" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.21805555555555556" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.28072916666666664" />
-        <entry key="app/src/main/res/layout/fragment_daily.xml" value="0.375" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/layout/fragment_daily.xml" value="0.30870513916015624" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.5" />
         <entry key="app/src/main/res/layout/fragment_monthly.xml" value="0.2947916666666667" />
         <entry key="app/src/main/res/layout/fragment_weekly.xml" value="0.2947916666666667" />
       </map>
