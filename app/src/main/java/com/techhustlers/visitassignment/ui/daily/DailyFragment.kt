@@ -50,7 +50,7 @@ class DailyFragment : Fragment() {
 
         var barDataSet1: BarDataSet
         barDataSet1 = BarDataSet(yValueGroup1, "")
-        barDataSet1.setColors(Color.parseColor("#FF865C"), Color.parseColor("#5A68E7"))
+        barDataSet1.setColors(Color.parseColor("#5A68E7"), Color.parseColor("#FF865C"))
 
         barDataSet1.setDrawIcons(false)
         barDataSet1.setDrawValues(false)
@@ -68,6 +68,7 @@ class DailyFragment : Fragment() {
         binding.chart.getData().setHighlightEnabled(false)
         binding.chart.invalidate()
         binding.chart.setFitBars(true)
+        binding.chart.animateY(1000)
 
         binding.chart.legend.isEnabled = false
 
