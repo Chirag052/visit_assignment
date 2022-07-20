@@ -19,7 +19,6 @@ class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
-        setupStatusBar()
         setupBinding()
         animateLogo()
         setupDelayHandler()
@@ -30,14 +29,7 @@ class SplashActivity : AppCompatActivity() {
     // endregion
 
     // region CUSTOM METHODS
-    // To setup Status Bar
-    private fun setupStatusBar() {
-        //to make status bar color transparent
-        window.setFlags(
-            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
-            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
-        )
-    }
+
 
     // To setup UI Binding
     private fun setupBinding() {
