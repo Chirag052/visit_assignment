@@ -70,7 +70,7 @@
 
                     <ImageView
                         android:layout_width="16dp"
-                        android:layout_height="match_parent"
+                        android:layout_height="16dp"
                         android:src="@drawable/rounded_corner_4_workout" />
 
                     <TextView

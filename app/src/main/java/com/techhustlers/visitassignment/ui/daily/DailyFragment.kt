@@ -11,8 +11,11 @@ import com.github.mikephil.charting.components.XAxis
 import com.github.mikephil.charting.data.BarData
 import com.github.mikephil.charting.data.BarDataSet
 import com.github.mikephil.charting.data.BarEntry
+import com.github.mikephil.charting.data.LineDataSet
 import com.github.mikephil.charting.formatter.IndexAxisValueFormatter
 import com.github.mikephil.charting.formatter.LargeValueFormatter
+import com.github.mikephil.charting.interfaces.datasets.IBarDataSet
+import com.github.mikephil.charting.interfaces.datasets.ILineDataSet
 import com.github.mikephil.charting.utils.MPPointF
 import com.techhustlers.visitassignment.R
 import com.techhustlers.visitassignment.databinding.FragmentDailyBinding
@@ -43,13 +46,14 @@ class DailyFragment : Fragment() {
         var yValueGroup1 = ArrayList<BarEntry>()
 
         yValueGroup1.add(0,BarEntry(0.5f, floatArrayOf(50.toFloat(), 40.toFloat())))
-        yValueGroup1.add(1,BarEntry(1.5f, floatArrayOf(130.toFloat(), 100.toFloat()),ContextCompat.getDrawable(requireContext(),R.drawable.ic_baseline_check_24)))
+        yValueGroup1.add(1,BarEntry(1.5f, floatArrayOf(150.toFloat(), 100.toFloat()),ContextCompat.getDrawable(requireContext(),R.drawable.ic_baseline_check_24)))
         yValueGroup1.add(2,BarEntry(2.5f, floatArrayOf(50.toFloat()),ContextCompat.getDrawable(requireContext(),R.drawable.ic_baseline_check_24)))
         yValueGroup1.add(2,BarEntry(2.5f, floatArrayOf(50.toFloat(),70.toFloat())))
         yValueGroup1.add(3,BarEntry(3.5f, floatArrayOf(70.toFloat(), 80.toFloat())))
         yValueGroup1.add(4,BarEntry(4.5f, floatArrayOf(130.toFloat(), 140.toFloat())))
         yValueGroup1.add(5,BarEntry(5.5f, floatArrayOf(65.toFloat(), 120.toFloat())))
         yValueGroup1.add(6,BarEntry(6.5f, floatArrayOf(20.toFloat(), 50.toFloat())))
+
 
 
         var barDataSet1: BarDataSet
@@ -60,6 +64,7 @@ class DailyFragment : Fragment() {
         barDataSet1.setDrawValues(false)
         barDataSet1.stackLabels = xvalues
         barDataSet1.iconsOffset = MPPointF.getInstance(0f, 16f)
+
 
         var barData = BarData(barDataSet1)
 
@@ -77,6 +82,7 @@ class DailyFragment : Fragment() {
         binding.chart.legend.isEnabled = false
         binding.chart.axisRight.isEnabled = false
         binding.chart.barData.setDrawValues(false)
+
 
         val barChartRender =
             CustomBarChartRender(binding.chart, binding.chart.getAnimator(), binding.chart.getViewPortHandler())
